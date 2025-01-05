@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://image.ibb.co/nqbdHJ/titlelogo.png" rel="icon">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://pre.jquery.com/jquery-3.3.1.min.js"></script>
     <link href="https://raw.githack.com/Arza-3d/ar3.js/master/stylesheets/ar3.min.css" rel="stylesheet" type="text/css">
 
     <title>format data</title>
@@ -42,42 +42,42 @@
   <tr>
     <td>CSV</td> 
     <td>
-      <code>
+      <pre>
         <span class="data">Name</span>,<span class="data">Age</span>,<span class="data">City</span>
         <span class="data">Alice</span>,<span class="data">30</span>,<span class="data">New York</span>
         <span class="data">Bob</span>,<span class="data">25</span>,<span class="data">London</span>
         <span class="data">Charlie</span>,<span class="data">40</span>,<span class="data">Paris</span>
-      </code>
+      </pre>
     </td>
   </tr>
   <tr>
     <td>JSON</td> 
     <td>
-      <code>
+      <pre>
         [
           {<span class="data">"Name"</span>: <span class="data">"Alice"</span>, <span class="data">"Age"</span>: <span class="data">30</span>, <span class="data">"City"</span>: <span class="data">"New York"</span>},
           {<span class="data">"Name"</span>: <span class="data">"Bob"</span>, <span class="data">"Age"</span>: <span class="data">25</span>, <span class="data">"City"</span>: <span class="data">"London"</span>},
           {<span class="data">"Name"</span>: <span class="data">"Charlie"</span>, <span class="data">"Age"</span>: <span class="data">40</span>, <span class="data">"City"</span>: <span class="data">"Paris"</span>}
         ]
-      </code>
+      </pre>
     </td>
   </tr>
   <tr>
     <td>Markdown</td> 
     <td>
-      <code>
+      <pre>
         | <span class="data">Name</span> | <span class="data">Age</span> | <span class="data">City</span> |
         |---|---|---|
         | <span class="data">Alice</span> | <span class="data">30</span> | <span class="data">New York</span> |
         | <span class="data">Bob</span> | <span class="data">25</span> | <span class="data">London</span> |
         | <span class="data">Charlie</span> | <span class="data">40</span> | <span class="data">Paris</span> |
-      </code>
+      </pre>
     </td>
   </tr>
   <tr>
     <td>LaTeX</td> 
     <td>
-      <code>
+      <pre>
         \begin{tabular}{|l|c|c|}
           \hline
           <span class="data">Name</span> & <span class="data">Age</span> & <span class="data">City</span> \\ \hline
@@ -85,13 +85,13 @@
           <span class="data">Bob</span> & <span class="data">25</span> & <span class="data">London</span> \\ \hline
           <span class="data">Charlie</span> & <span class="data">40</span> & <span class="data">Paris</span> \\ \hline
         \end{tabular}
-      </code>
+      </pre>
     </td>
   </tr>
   <tr>
     <td>XML</td> 
     <td>
-      <code>
+      <pre>
         &lt;?xml version="1.0"?&gt;
         &lt;table&gt;
           &lt;tr&gt;
@@ -115,13 +115,13 @@
             &lt;td&gt;<span class="data">Paris</span>&lt;/td&gt;
           &lt;/tr&gt;
         &lt;/table&gt;
-      </code>
+      </pre>
     </td>
   </tr>
   <tr>
     <td>SQL</td> 
     <td>
-      <code>
+      <pre>
         CREATE TABLE <span class="data">Persons</span> (
           <span class="data">Name</span> varchar(255) NOT NULL,
           <span class="data">Age</span> int,
@@ -136,20 +136,20 @@
 
         INSERT INTO <span class="data">Persons</span> (<span class="data">Name</span>, <span class="data">Age</span>, <span class="data">City</span>) 
         VALUES (<span class="data">'Charlie'</span>, <span class="data">40</span>, <span class="data">'Paris'</span>);
-      </code>
+      </pre>
     </td>
   </tr>
   <tr>
     <td>MediaWiki</td> 
     <td>
-      <code>
+      <pre>
 {| class="wikitable" style="text-align:left;"
 |+ style="background-color:#4CAF50;color:white;" | <span class="data">Name</span> | <span class="data">Age</span> | <span class="data">City</span> |-
 | <span class="data">Alice</span> | <span class="data">30</span> | <span class="data">New York</span> ||
 | <span class="data">Bob</span> | <span class="data">25</span> | <span class="data">London</span> ||
 | <span class="data">Charlie</span> | <span class="data">40</span> | <span class="data">Paris</span> |}
 |}
-      </code>
+      </pre>
     </td>
   </tr>
 </table>
