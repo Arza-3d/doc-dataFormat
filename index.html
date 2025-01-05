@@ -34,7 +34,126 @@
 
         <h3>tabel data format</h3>
         <section>
-         
+         <table>
+  <tr>
+    <th>Format</th>
+    <th>Example</th>
+  </tr>
+  <tr>
+    <td>CSV</td> 
+    <td>
+      <code>
+        <span class="data">Name</span>,<span class="data">Age</span>,<span class="data">City</span>
+        <span class="data">Alice</span>,<span class="data">30</span>,<span class="data">New York</span>
+        <span class="data">Bob</span>,<span class="data">25</span>,<span class="data">London</span>
+        <span class="data">Charlie</span>,<span class="data">40</span>,<span class="data">Paris</span>
+      </code>
+    </td>
+  </tr>
+  <tr>
+    <td>JSON</td> 
+    <td>
+      <code>
+        [
+          {<span class="data">"Name"</span>: <span class="data">"Alice"</span>, <span class="data">"Age"</span>: <span class="data">30</span>, <span class="data">"City"</span>: <span class="data">"New York"</span>},
+          {<span class="data">"Name"</span>: <span class="data">"Bob"</span>, <span class="data">"Age"</span>: <span class="data">25</span>, <span class="data">"City"</span>: <span class="data">"London"</span>},
+          {<span class="data">"Name"</span>: <span class="data">"Charlie"</span>, <span class="data">"Age"</span>: <span class="data">40</span>, <span class="data">"City"</span>: <span class="data">"Paris"</span>}
+        ]
+      </code>
+    </td>
+  </tr>
+  <tr>
+    <td>Markdown</td> 
+    <td>
+      <code>
+        | <span class="data">Name</span> | <span class="data">Age</span> | <span class="data">City</span> |
+        |---|---|---|
+        | <span class="data">Alice</span> | <span class="data">30</span> | <span class="data">New York</span> |
+        | <span class="data">Bob</span> | <span class="data">25</span> | <span class="data">London</span> |
+        | <span class="data">Charlie</span> | <span class="data">40</span> | <span class="data">Paris</span> |
+      </code>
+    </td>
+  </tr>
+  <tr>
+    <td>LaTeX</td> 
+    <td>
+      <code>
+        \begin{tabular}{|l|c|c|}
+          \hline
+          <span class="data">Name</span> & <span class="data">Age</span> & <span class="data">City</span> \\ \hline
+          <span class="data">Alice</span> & <span class="data">30</span> & <span class="data">New York</span> \\ \hline
+          <span class="data">Bob</span> & <span class="data">25</span> & <span class="data">London</span> \\ \hline
+          <span class="data">Charlie</span> & <span class="data">40</span> & <span class="data">Paris</span> \\ \hline
+        \end{tabular}
+      </code>
+    </td>
+  </tr>
+  <tr>
+    <td>XML</td> 
+    <td>
+      <code>
+        &lt;?xml version="1.0"?&gt;
+        &lt;table&gt;
+          &lt;tr&gt;
+            &lt;th&gt;<span class="data">Name</span>&lt;/th&gt;
+            &lt;th&gt;<span class="data">Age</span>&lt;/th&gt;
+            &lt;th&gt;<span class="data">City</span>&lt;/th&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;<span class="data">Alice</span>&lt;/td&gt;
+            &lt;td&gt;<span class="data">30</span>&lt;/td&gt;
+            &lt;td&gt;<span class="data">New York</span>&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;<span class="data">Bob</span>&lt;/td&gt;
+            &lt;td&gt;<span class="data">25</span>&lt;/td&gt;
+            &lt;td&gt;<span class="data">London</span>&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;<span class="data">Charlie</span>&lt;/td&gt;
+            &lt;td&gt;<span class="data">40</span>&lt;/td&gt;
+            &lt;td&gt;<span class="data">Paris</span>&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/table&gt;
+      </code>
+    </td>
+  </tr>
+  <tr>
+    <td>SQL</td> 
+    <td>
+      <code>
+        CREATE TABLE <span class="data">Persons</span> (
+          <span class="data">Name</span> varchar(255) NOT NULL,
+          <span class="data">Age</span> int,
+          <span class="data">City</span> varchar(255)
+        );
+
+        INSERT INTO <span class="data">Persons</span> (<span class="data">Name</span>, <span class="data">Age</span>, <span class="data">City</span>) 
+        VALUES (<span class="data">'Alice'</span>, <span class="data">30</span>, <span class="data">'New York'</span>);
+
+        INSERT INTO <span class="data">Persons</span> (<span class="data">Name</span>, <span class="data">Age</span>, <span class="data">City</span>) 
+        VALUES (<span class="data">'Bob'</span>, <span class="data">25</span>, <span class="data">'London'</span>);
+
+        INSERT INTO <span class="data">Persons</span> (<span class="data">Name</span>, <span class="data">Age</span>, <span class="data">City</span>) 
+        VALUES (<span class="data">'Charlie'</span>, <span class="data">40</span>, <span class="data">'Paris'</span>);
+      </code>
+    </td>
+  </tr>
+  <tr>
+    <td>MediaWiki</td> 
+    <td>
+      <code>
+{| class="wikitable" style="text-align:left;"
+|+ style="background-color:#4CAF50;color:white;" | <span class="data">Name</span> | <span class="data">Age</span> | <span class="data">City</span> |-
+| <span class="data">Alice</span> | <span class="data">30</span> | <span class="data">New York</span> ||
+| <span class="data">Bob</span> | <span class="data">25</span> | <span class="data">London</span> ||
+| <span class="data">Charlie</span> | <span class="data">40</span> | <span class="data">Paris</span> |}
+|}
+      </code>
+    </td>
+  </tr>
+</table>
+
         </section>
 
       </div>
